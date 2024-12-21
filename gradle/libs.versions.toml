@@ -26,4 +26,4 @@ kotlin-qa = "org.danilopianini.gradle-kotlin-qa:0.69.0"
 kotlin-dokka = { id = "org.jetbrains.dokka", version = "2.0.0" }
 git-semantic-versioning = "org.danilopianini.git-sensitive-semantic-versioning:3.1.7"
 avro = { id = "com.github.davidmc24.gradle.plugin.avro", version.ref = "avro-plugin"}
-publish = {id="org.danilopianini.publish-on-central", version="7.0.0"}
+publish = {id="org.danilopianini.publish-on-central", version="7.0.1"}
