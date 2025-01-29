@@ -17,7 +17,7 @@ class TestGroupEventsSerialization {
     @BeforeEach
     void setUp() {
         avroSerializer = new AvroSerializer();
-        testUser = User.create("testUser", "test", "user", "test@user.it", "test");
+        testUser = User.create("testUser", "test", "user", "test@user.it");
     }
 
     @Test

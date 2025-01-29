@@ -25,7 +25,6 @@ final class AvroConverter {
                 .setName(user.name())
                 .setSurname(user.surname())
                 .setEmail(user.email())
-                .setRole(user.role())
                 .build();
     }
 
@@ -34,8 +33,7 @@ final class AvroConverter {
                 avroUser.getId(),
                 avroUser.getName(),
                 avroUser.getSurname(),
-                avroUser.getEmail(),
-                avroUser.getRole()
+                avroUser.getEmail()
         );
     }
 
