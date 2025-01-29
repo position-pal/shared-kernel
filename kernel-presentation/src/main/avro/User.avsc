@@ -6,7 +6,6 @@
     {"name": "id", "type": "string"},
     {"name": "name", "type": "string"},
     {"name": "surname", "type": "string"},
-    {"name": "email", "type": "string"},
-    {"name": "role", "type": "string"}
+    {"name": "email", "type": "string"}
   ]
 }
