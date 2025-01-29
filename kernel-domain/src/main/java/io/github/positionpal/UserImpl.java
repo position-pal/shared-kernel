@@ -7,6 +7,5 @@ package io.github.positionpal;
  * @param name the first name of the user
  * @param surname the last name of the user
  * @param email the email address of the user
- * @param role the role of the user
  */
-public record UserImpl(String id, String name, String surname, String email, String role) implements User { }
+public record UserImpl(String id, String name, String surname, String email) implements User { }

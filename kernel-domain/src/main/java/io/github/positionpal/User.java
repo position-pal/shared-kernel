@@ -12,15 +12,13 @@ public interface User extends Event {
      * @param name the name of the user
      * @param surname the surname of the user
      * @param email the email of the user
-     * @param role the role of the user
      * @return a new instance of User
      */
     static User create(final String id,
                        final String name,
                        final String surname,
-                       final String email,
-                       final String role) {
-        return new UserImpl(id, name, surname, email, role);
+                       final String email) {
+        return new UserImpl(id, name, surname, email);
     }
 
     /**
@@ -50,11 +48,4 @@ public interface User extends Event {
      * @return the user email
      */
     String email();
-
-    /**
-     * Gets the role of the user.
-     *
-     * @return the user role
-     */
-    String role();
 }
