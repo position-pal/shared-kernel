@@ -17,9 +17,9 @@ class TestNotificationCommandsSerialization {
     @Test
     void testSerializeAndDeserializeGroupWiseNotifications() {
         final GroupWisePushNotification originalCommand = GroupWisePushNotification.of(
-                GroupId.create("group123"),
-                UserId.create("testUser"),
-                NotificationMessage.create("A sample title", "A sample very very long message")
+            GroupId.create("group123"),
+            UserId.create("testUser"),
+            NotificationMessage.create("A sample title", "A sample very very long message")
         );
         assertDoesNotThrow(() -> {
             final byte[] serializedData = serializer.serializeGroupWiseNotification(originalCommand);
@@ -31,9 +31,9 @@ class TestNotificationCommandsSerialization {
     @Test
     void testSerializeAndDeserializeCoMembersNotifications() {
         final var originalCommand = CoMembersPushNotification.of(
-                UserId.create("testUser"),
-                UserId.create("anotherUser"),
-                NotificationMessage.create("A sample title", "A sample very very long message")
+            UserId.create("testUser"),
+            UserId.create("anotherUser"),
+            NotificationMessage.create("A sample title", "A sample very very long message")
         );
         assertDoesNotThrow(() -> {
             final byte[] serializedData = serializer.serializeCoMembersNotification(originalCommand);

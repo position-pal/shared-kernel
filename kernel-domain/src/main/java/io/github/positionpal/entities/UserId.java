@@ -6,9 +6,9 @@ package io.github.positionpal.entities;
 public interface UserId {
 
     /**
-     * @return the username of the user.
+     * @return the value of the user identifier.
      */
-    String username();
+    String value();
 
     /**
      * Factory method to create an instance of UserId.

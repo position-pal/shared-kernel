@@ -3,7 +3,7 @@
   "name": "AvroUser",
   "namespace": "io.github.positionpal",
   "fields": [
-    {"name": "id", "type": "string"},
+    {"name": "id", "type": "AvroUserId"},
     {"name": "name", "type": "string"},
     {"name": "surname", "type": "string"},
     {"name": "email", "type": "string"}

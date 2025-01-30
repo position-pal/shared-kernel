@@ -4,7 +4,12 @@ import io.github.positionpal.commands.CoMembersPushNotification;
 import io.github.positionpal.commands.GroupWisePushNotification;
 import io.github.positionpal.entities.GroupId;
 import io.github.positionpal.entities.NotificationMessage;
+import io.github.positionpal.entities.User;
 import io.github.positionpal.entities.UserId;
+import io.github.positionpal.events.AddedMemberToGroup;
+import io.github.positionpal.events.GroupCreated;
+import io.github.positionpal.events.GroupDeleted;
+import io.github.positionpal.events.RemovedMemberToGroup;
 
 /** Utility class to convert objects to and from Avro objects. */
 final class AvroConverter {
@@ -12,7 +17,7 @@ final class AvroConverter {
     private AvroConverter() { }
 
     static AvroUserId toAvroUserId(final UserId userId) {
-        return AvroUserId.newBuilder().setUsername(userId.username()).build();
+        return AvroUserId.newBuilder().setUsername(userId.value()).build();
     }
 
     static UserId toUserId(final AvroUserId avroUserId) {
@@ -21,19 +26,19 @@ final class AvroConverter {
 
     static AvroUser toAvroUser(final User user) {
         return AvroUser.newBuilder()
-                .setId(user.id())
-                .setName(user.name())
-                .setSurname(user.surname())
-                .setEmail(user.email())
-                .build();
+            .setId(toAvroUserId(user.id()))
+            .setName(user.name())
+            .setSurname(user.surname())
+            .setEmail(user.email())
+            .build();
     }
 
     static User toUser(final AvroUser avroUser) {
         return User.create(
-                avroUser.getId(),
-                avroUser.getName(),
-                avroUser.getSurname(),
-                avroUser.getEmail()
+            toUserId(avroUser.getId()),
+            avroUser.getName(),
+            avroUser.getSurname(),
+            avroUser.getEmail()
         );
     }
 
@@ -47,51 +52,51 @@ final class AvroConverter {
 
     static AddedMemberToGroupEvent toAvroAddedMemberToGroup(final AddedMemberToGroup addedMemberToGroup) {
         return AddedMemberToGroupEvent.newBuilder()
-                .setGroupId(addedMemberToGroup.groupId())
-                .setAddedMember(toAvroUser(addedMemberToGroup.addedMember()))
-                .build();
+            .setGroupId(toAvroGroupId(addedMemberToGroup.groupId()))
+            .setAddedMember(toAvroUser(addedMemberToGroup.addedMember()))
+            .build();
     }
 
     static AddedMemberToGroup toAddedMemberToGroup(final AddedMemberToGroupEvent avroAddedMemberToGroup) {
         return AddedMemberToGroup.create(
-                avroAddedMemberToGroup.getGroupId(),
-                toUser(avroAddedMemberToGroup.getAddedMember())
+            toGroupId(avroAddedMemberToGroup.getGroupId()),
+            toUser(avroAddedMemberToGroup.getAddedMember())
         );
     }
 
     static RemovedMemberToGroupEvent toAvroRemovedMemberToGroup(final RemovedMemberToGroup removedMemberToGroup) {
         return RemovedMemberToGroupEvent.newBuilder()
-                .setGroupId(removedMemberToGroup.groupId())
-                .setRemovedMember(toAvroUser(removedMemberToGroup.removedMember()))
-                .build();
+            .setGroupId(toAvroGroupId(removedMemberToGroup.groupId()))
+            .setRemovedMember(toAvroUser(removedMemberToGroup.removedMember()))
+            .build();
     }
 
     static RemovedMemberToGroup toRemovedMemberToGroup(final RemovedMemberToGroupEvent avroRemovedMemberToGroup) {
         return RemovedMemberToGroup.create(
-                avroRemovedMemberToGroup.getGroupId(),
-                toUser(avroRemovedMemberToGroup.getRemovedMember())
+            toGroupId(avroRemovedMemberToGroup.getGroupId()),
+            toUser(avroRemovedMemberToGroup.getRemovedMember())
         );
     }
 
     static GroupCreatedEvent toAvroGroupCreated(final GroupCreated groupCreated) {
         return GroupCreatedEvent.newBuilder()
-                .setGroupId(groupCreated.groupId())
-                .setCreatedBy(toAvroUser(groupCreated.createdBy()))
-                .build();
+            .setGroupId(toAvroGroupId(groupCreated.groupId()))
+            .setCreatedBy(toAvroUser(groupCreated.createdBy()))
+            .build();
     }
 
     static GroupCreated toGroupCreated(final GroupCreatedEvent avroGroupCreated) {
-        return GroupCreated.create(avroGroupCreated.getGroupId(), toUser(avroGroupCreated.getCreatedBy()));
+        return GroupCreated.create(toGroupId(avroGroupCreated.getGroupId()), toUser(avroGroupCreated.getCreatedBy()));
     }
 
     static GroupDeletedEvent toAvroGroupDeleted(final GroupDeleted groupDeleted) {
         return GroupDeletedEvent.newBuilder()
-                .setGroupId(groupDeleted.groupId())
-                .build();
+            .setGroupId(toAvroGroupId(groupDeleted.groupId()))
+            .build();
     }
 
     static GroupDeleted toGroupDeleted(final GroupDeletedEvent avroGroupDeleted) {
-        return GroupDeleted.create(avroGroupDeleted.getGroupId());
+        return GroupDeleted.create(toGroupId(avroGroupDeleted.getGroupId()));
     }
 
     static AvroNotificationMessage toAvroNotificationMessage(final NotificationMessage notificationMessage) {
