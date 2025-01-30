@@ -1,3 +1,17 @@
+## [0.11.0](https://github.com/position-pal/shared-kernel/compare/0.10.2...0.11.0) (2025-01-30)
+
+### Features
+
+* role removed from user ([#45](https://github.com/position-pal/shared-kernel/issues/45)) ([d8f7aaa](https://github.com/position-pal/shared-kernel/commit/d8f7aaae4e16be4f363239bacd4db0abdc0b5492))
+
+### Dependency updates
+
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.19 ([#46](https://github.com/position-pal/shared-kernel/issues/46)) ([47fd9d3](https://github.com/position-pal/shared-kernel/commit/47fd9d375f16546dbf0c7c322a1ed60d3cdd6492))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java digest to 3a4f6e1 ([#44](https://github.com/position-pal/shared-kernel/issues/44)) ([cb6418b](https://github.com/position-pal/shared-kernel/commit/cb6418b97517d8aea0c47214e42c567cf92d88f2))
+
 ## [0.10.2](https://github.com/position-pal/shared-kernel/compare/0.10.1...0.10.2) (2025-01-27)
 
 ### Dependency updates
