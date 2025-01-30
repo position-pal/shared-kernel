@@ -1,3 +1,9 @@
+## [0.11.1](https://github.com/position-pal/shared-kernel/compare/0.11.0...0.11.1) (2025-01-30)
+
+### Bug Fixes
+
+* **release:** change publishKotlinOSSRH to new publishOSSRH api ([962ba68](https://github.com/position-pal/shared-kernel/commit/962ba68ae5fbd4d2f6b26357db9e6ef1b707ec48))
+
 ## [0.11.0](https://github.com/position-pal/shared-kernel/compare/0.10.2...0.11.0) (2025-01-30)
 
 ### Features
