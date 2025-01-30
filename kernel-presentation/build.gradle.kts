@@ -10,3 +10,5 @@ dependencies {
         implementation(avro)
     }
 }
+
+tasks.dokkaHtml.get().dependsOn(tasks.generateAvroJava)

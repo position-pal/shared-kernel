@@ -6,6 +6,7 @@ plugins {
 rootProject.name = "shared-kernel"
 
 include(
+    "kernel-domain",
     "kernel-presentation",
 )
 
@@ -25,4 +26,3 @@ gitHooks {
     }
     createHooks(overwriteExisting = true)
 }
-include("kernel-domain")

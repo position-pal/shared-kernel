@@ -1,5 +1,5 @@
 const publishCommands = `
-./gradlew publishKotlinOSSRHPublicationToGithubRepository || exit 1
+./gradlew publishOSSRHPublicationToGithubRepository || exit 1
 echo 'Publishing completed successfully'
 `
 const releaseBranches = ["main"]
