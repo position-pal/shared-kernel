@@ -1,3 +1,13 @@
+## [1.0.0](https://github.com/position-pal/shared-kernel/compare/0.11.1...1.0.0) (2025-01-31)
+
+### ⚠ BREAKING CHANGES
+
+* use `UserId` and `GroupId` coherently in all domain events and commands (#49)
+
+### Refactoring
+
+* use `UserId` and `GroupId` coherently in all domain events and commands ([#49](https://github.com/position-pal/shared-kernel/issues/49)) ([06c696b](https://github.com/position-pal/shared-kernel/commit/06c696b930bc2615204af232e6112f05d0e18ab3))
+
 ## [0.11.1](https://github.com/position-pal/shared-kernel/compare/0.11.0...0.11.1) (2025-01-30)
 
 ### Bug Fixes
