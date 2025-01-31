@@ -3,7 +3,7 @@
   "name": "AddedMemberToGroupEvent",
   "namespace": "io.github.positionpal",
   "fields": [
-    {"name": "groupId", "type": "string"},
+    {"name": "groupId", "type": "AvroGroupId"},
     {"name":  "addedMember", "type": "AvroUser"}
   ]
 }

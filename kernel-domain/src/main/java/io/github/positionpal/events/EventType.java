@@ -1,9 +1,9 @@
-package io.github.positionpal;
+package io.github.positionpal.events;
 
 /**
- * Enum representing different types of messages.
+ * Enum representing different types of events.
  */
-public enum MessageType {
+public enum EventType {
     /**
      * Message type for when a group is created.
      */

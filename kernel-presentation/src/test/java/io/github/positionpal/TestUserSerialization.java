@@ -1,8 +1,11 @@
 package io.github.positionpal;
 
+import io.github.positionpal.entities.User;
+import io.github.positionpal.entities.UserId;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
@@ -11,15 +14,14 @@ class TestUserSerialization {
 
     @Test
     void testUserSerialization() {
-        final User toSerialize = User.create("testUser", "test", "user", "test@user.it");
+        final User toSerialize = User.create(UserId.create(UUID.randomUUID().toString()), "test", "user", "test@user.it");
         final AvroSerializer serializer = new AvroSerializer();
-        User deserializedObject = null;
         try {
             final byte[] serializedObject = serializer.serializeUser(toSerialize);
-            deserializedObject = serializer.deserializeUser(serializedObject);
+            final User deserializedObject = serializer.deserializeUser(serializedObject);
+            assertEquals(toSerialize, deserializedObject);
         } catch (IOException e) {
             fail();
         }
-        assertEquals(toSerialize, deserializedObject);
     }
 }

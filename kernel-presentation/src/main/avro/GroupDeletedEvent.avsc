@@ -3,6 +3,6 @@
   "name": "GroupDeletedEvent",
   "namespace": "io.github.positionpal",
   "fields": [
-    {"name": "groupId", "type": "string"}
+    {"name": "groupId", "type": "AvroGroupId"}
   ]
 }
