@@ -2,8 +2,8 @@ $dokka.format:html-v1
 $dokka.linkExtension:html
 
 module:kernel-domain
-io.github.positionpal
 io.github.positionpal.commands
 io.github.positionpal.entities
+io.github.positionpal.events
 module:kernel-presentation
 io.github.positionpal
