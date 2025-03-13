@@ -1,0 +1,99 @@
+name: Build, Test and Check
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, macos-14, windows-2022]
+        jvm-version: [ 17, 21 ]
+      fail-fast: false
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      - name: Set up JDK ${{ matrix.jvm-version }}
+        uses: actions/setup-java@3a4f6e1af504cf6a31855fa899c6aa5355ba6c12 # v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ matrix.jvm-version }}
+      - name: Assemble main and test classes
+        run: ./gradlew classes testClasses
+      - name: Test
+        run: ./gradlew test
+      - name: Check
+        run: ./gradlew check
+      - name: Generate sourceJar and javadocJar
+        run: ./gradlew sourceJar javadocJar
+
+  release:
+    needs: build
+    if: github.ref_name == github.event.repository.default_branch
+    permissions: # Not specified scopes are set to `none`!
+      packages: write
+      contents: write
+    concurrency:
+      group: release-and-delivery-${{ github.event.number || github.ref }}
+    runs-on: ubuntu-24.04
+    outputs: # see release.config.js
+      release-status: ${{ env.RELEASE_STATUS }}
+      release_version: ${{ env.RELEASE_VERSION }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+          fetch-tags: true
+      - name: Find the version of Node from package.json
+        id: node-version
+        run: echo "version=$(jq -r .engines.node package.json)" >> $GITHUB_OUTPUT
+      - name: Install Node
+        uses: actions/setup-node@1d0ff469b7ec7b3cb9d8673fde0c81c44821de2a # v4.2.0
+        with:
+          node-version: ${{ steps.node-version.outputs.version }}
+      - name: Release
+        run: |
+          npm install
+          npx semantic-release
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          ORG_GRADLE_PROJECT_signingKey: ${{ secrets.SIGNING_KEY }}
+          ORG_GRADLE_PROJECT_signingPassword: ${{ secrets.SIGNING_PASSWORD }}
+
+  publish-doc:
+    needs: release
+    # Trigger this job only if the semantic release bot has released a new version
+    if: ${{ needs.release.outputs.release-status == 'released' }}
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          ref: ${{ needs.release.outputs.release_version }}
+          fetch-tags: true
+      - name: Generate dokka multi-module documentation
+        run: ./gradlew dokkaHtmlMultiModule
+      - name: Publish on Github pages
+        uses: JamesIves/github-pages-deploy-action@6c2d9db40f9296374acc17b90404b6e8864128c8 # v4
+        with:
+          folder: ./build/dokka/htmlMultiModule
+
+  success:
+    needs:
+      - build
+      - release
+      - publish-doc
+    if: >- # run if at least one needed job has failed or all needed jobs have not been cancelled
+      always() && (
+        contains(join(needs.*.result, ','), 'failure')
+        || !contains(join(needs.*.result, ','), 'cancelled')
+      )
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Verify no failures occurred in needed jobs
+        # if there are failures, false is executed and the job fails.
+        run: ${{ !contains(join(needs.*.result, ','), 'failure') }}

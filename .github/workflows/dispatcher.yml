@@ -2,7 +2,7 @@
 # pipeline runs only when necessary. It should be placed in a separate file to prevent triggering the
 # CI/CD workflow when conditions are not met, as this could lead to incorrect behavior for bots that
 # depends on the successful execution of specific jobs.
-name: CI/CD
+name: CI/CD Dispatcher
 
 on:
   push:
@@ -21,6 +21,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - run: |
+          echo 'github.actor = ${{ github.actor }}'
           echo 'github.event_name = ${{ github.event_name }}'
           echo 'github.event.pull_request.head.repo.full_name = ${{ github.event.pull_request.head.repo.full_name }}'
           echo 'github.repository = ${{ github.repository }}'
@@ -37,5 +38,5 @@ jobs:
 
   ci-cd:
     needs: dispatcher
-    uses: ./.github/workflows/ci.yml
+    uses: ./.github/workflows/ci-cd.yml
     secrets: inherit
