@@ -47,4 +47,6 @@ In case you encounter any problem, please open a new issue in the repository.
 
 ## Documentation
 
+The API documentation is available [here](https://position-pal.github.io/shared-kernel/).
+
 Refer to the [project documentation](https://position-pal.github.io/docs/) for more details.
