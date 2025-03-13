@@ -134,3 +134,8 @@ subprojects {
         }
     }
 }
+
+/* Set the project version based on the git history. */
+gitSemVer {
+    assignGitSemanticVersion()
+}
