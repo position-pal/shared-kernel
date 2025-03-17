@@ -51,7 +51,6 @@ public final class AvroSerializer implements EventSerializer {
         final Encoder encoder = EncoderFactory.get().binaryEncoder(outputStream, null);
         final SpecificDatumWriter<T> writer = new SpecificDatumWriter<>(schema);
         writer.write(object, encoder);
-        System.out.println("Something");
         encoder.flush();
         return outputStream.toByteArray();
     }
