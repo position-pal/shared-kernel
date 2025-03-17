@@ -22,6 +22,8 @@ jobs:
           java-version: ${{ matrix.jvm-version }}
       - name: Assemble main and test classes
         run: ./gradlew classes testClasses
+      - name: LS
+        run: ls .
       - name: Check
         run: ./gradlew check
       - name: Generate sourceJar and javadocJar
