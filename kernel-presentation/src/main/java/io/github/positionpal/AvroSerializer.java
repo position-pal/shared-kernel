@@ -27,6 +27,8 @@ import java.io.IOException;
  */
 public final class AvroSerializer implements EventSerializer {
 
+    // TEST ABC
+    
     private static final Schema USER_ID_SCHEMA = AvroUserId.getClassSchema();
     private static final Schema GROUP_ID_SCHEMA = AvroGroupId.getClassSchema();
     private static final Schema USER_SCHEMA = AvroUser.getClassSchema();
