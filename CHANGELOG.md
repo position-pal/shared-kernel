@@ -1,3 +1,22 @@
+## [1.0.3](https://github.com/position-pal/shared-kernel/compare/1.0.2...1.0.3) (2025-03-20)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.1.20 ([#73](https://github.com/position-pal/shared-kernel/issues/73)) ([fd6976a](https://github.com/position-pal/shared-kernel/commit/fd6976a306f5c8cf863f6a3edea3df365b872a97))
+* **deps:** update dependency org.junit:junit-bom to v5.12.1 ([#66](https://github.com/position-pal/shared-kernel/issues/66)) ([5402d50](https://github.com/position-pal/shared-kernel/commit/5402d50584f30f78f3d5b3338445f6b75905794c))
+* **deps:** update dependency org.mockito:mockito-core to v5.16.1 ([#67](https://github.com/position-pal/shared-kernel/issues/67)) ([4cd491c](https://github.com/position-pal/shared-kernel/commit/4cd491cd6b8ffe5dcbcef667b47439255fee7226))
+
+### Build and continuous integration
+
+* add gitSemVer configuration ([c3be266](https://github.com/position-pal/shared-kernel/commit/c3be2666d00f4f7f79cef08d913e9dfab75c0714))
+* **deps:** update actions/setup-node action to v4.3.0 ([#68](https://github.com/position-pal/shared-kernel/issues/68)) ([7a97c05](https://github.com/position-pal/shared-kernel/commit/7a97c052f85e92f1e1bc7aa752e0f3679f0308fe))
+* remove test step in ci, using check as only point where code can be checked ([#71](https://github.com/position-pal/shared-kernel/issues/71)) ([e7f09cd](https://github.com/position-pal/shared-kernel/commit/e7f09cd9dd73dec2223f65456f167c3e874c4aa3))
+
+### General maintenance
+
+* add println to AvroSerializer.java ([#70](https://github.com/position-pal/shared-kernel/issues/70)) ([de7f1aa](https://github.com/position-pal/shared-kernel/commit/de7f1aa6c255602251eaa3220e89f8460110a169))
+* **readme:** update readme with api doc link ([0112f5a](https://github.com/position-pal/shared-kernel/commit/0112f5a765803632da7343450a2140b73b62b83c))
+
 ## [1.0.2](https://github.com/position-pal/shared-kernel/compare/1.0.1...1.0.2) (2025-03-13)
 
 ### Bug Fixes
