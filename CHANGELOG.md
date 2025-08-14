@@ -1,3 +1,42 @@
+## [1.0.6](https://github.com/position-pal/shared-kernel/compare/1.0.5...1.0.6) (2025-08-14)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.2.10 ([#146](https://github.com/position-pal/shared-kernel/issues/146)) ([f774251](https://github.com/position-pal/shared-kernel/commit/f7742513342cc96cdfb47895005ffffc86c641f5))
+* **deps:** update dependency gradle to v8.14.3 ([#126](https://github.com/position-pal/shared-kernel/issues/126)) ([097d0c4](https://github.com/position-pal/shared-kernel/commit/097d0c4c4c4ea69284a290fc6e6cff935b8997c3))
+* **deps:** update dependency org.junit:junit-bom to v5.13.2 ([#117](https://github.com/position-pal/shared-kernel/issues/117)) ([3511593](https://github.com/position-pal/shared-kernel/commit/351159326b8888aaa2227a23b57ed10e7e0cf878))
+* **deps:** update dependency org.junit:junit-bom to v5.13.3 ([#127](https://github.com/position-pal/shared-kernel/issues/127)) ([7682881](https://github.com/position-pal/shared-kernel/commit/76828815e4403ede579840110c2ab12bffc8f1e7))
+* **deps:** update dependency org.junit:junit-bom to v5.13.4 ([#136](https://github.com/position-pal/shared-kernel/issues/136)) ([e356a30](https://github.com/position-pal/shared-kernel/commit/e356a30881f1a8d55b63416588eba61731f294b1))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.134 ([#123](https://github.com/position-pal/shared-kernel/issues/123)) ([adf806b](https://github.com/position-pal/shared-kernel/commit/adf806bf21ea0b1f674258c1b4942e6759de89cf))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.135 ([#124](https://github.com/position-pal/shared-kernel/issues/124)) ([957e88e](https://github.com/position-pal/shared-kernel/commit/957e88e179b19bcb5a737888de90a212674a5b89))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.136 ([#130](https://github.com/position-pal/shared-kernel/issues/130)) ([f8fb9d9](https://github.com/position-pal/shared-kernel/commit/f8fb9d9d62875886369c6c87381d04c17fa5245e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.137 ([#134](https://github.com/position-pal/shared-kernel/issues/134)) ([45bbdc6](https://github.com/position-pal/shared-kernel/commit/45bbdc6032d6f49f25f4665f5b2521cfeba933aa))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.138 ([#135](https://github.com/position-pal/shared-kernel/issues/135)) ([1870641](https://github.com/position-pal/shared-kernel/commit/18706419d05757be312598956f7c89f7499cc41c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.139 ([#140](https://github.com/position-pal/shared-kernel/issues/140)) ([86f9d05](https://github.com/position-pal/shared-kernel/commit/86f9d0535e4d7f16378139efd66d842a082d7dff))
+* **deps:** update node.js to 22.17 ([#120](https://github.com/position-pal/shared-kernel/issues/120)) ([180ea75](https://github.com/position-pal/shared-kernel/commit/180ea755f8070a6d8eb7439c9a6fb1a858d2bc32))
+* **deps:** update node.js to 22.18 ([#139](https://github.com/position-pal/shared-kernel/issues/139)) ([7099f19](https://github.com/position-pal/shared-kernel/commit/7099f19dc3aebd8e8ae772c656fd77cfd7985f3a))
+* **deps:** update plugin com.gradle.develocity to v4.1 ([#133](https://github.com/position-pal/shared-kernel/issues/133)) ([746901c](https://github.com/position-pal/shared-kernel/commit/746901c33c40e1eb7348c3322cd7468c22d355c4))
+* **deps:** update plugin git-semantic-versioning to v5.1.5 ([#122](https://github.com/position-pal/shared-kernel/issues/122)) ([d623a88](https://github.com/position-pal/shared-kernel/commit/d623a8873120e0599e822a54f2b7134712e1dd9d))
+* **deps:** update plugin git-semantic-versioning to v5.1.6 ([#125](https://github.com/position-pal/shared-kernel/issues/125)) ([df06183](https://github.com/position-pal/shared-kernel/commit/df0618305939aa76a770c5344b62422f6657ff97))
+* **deps:** update plugin git-semantic-versioning to v5.1.7 ([#128](https://github.com/position-pal/shared-kernel/issues/128)) ([11564c4](https://github.com/position-pal/shared-kernel/commit/11564c4c9ad218df767beecc1b01b74d600ee256))
+* **deps:** update plugin git-semantic-versioning to v5.1.8 ([#143](https://github.com/position-pal/shared-kernel/issues/143)) ([96cacbb](https://github.com/position-pal/shared-kernel/commit/96cacbb2860072e7cba60abdcfa42040c4e97702))
+* **deps:** update plugin git-semantic-versioning to v6 ([#144](https://github.com/position-pal/shared-kernel/issues/144)) ([c5cc3f3](https://github.com/position-pal/shared-kernel/commit/c5cc3f332bfa069b88af182a1ee3a7da71da9a75))
+* **deps:** update plugin git-semantic-versioning to v6.0.1 ([#149](https://github.com/position-pal/shared-kernel/issues/149)) ([ccd7868](https://github.com/position-pal/shared-kernel/commit/ccd7868359d6ce46c5d85a0b49ac968f2b2ea4a5))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.27 ([#115](https://github.com/position-pal/shared-kernel/issues/115)) ([d7d2da7](https://github.com/position-pal/shared-kernel/commit/d7d2da70fee0ce260c89d1ee11b7961ec71f1f0d))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.28 ([#131](https://github.com/position-pal/shared-kernel/issues/131)) ([b6e55cc](https://github.com/position-pal/shared-kernel/commit/b6e55ccebdfc27f7c5b8f0e2b2ba50ff20bc286b))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.29 ([#148](https://github.com/position-pal/shared-kernel/issues/148)) ([fbde356](https://github.com/position-pal/shared-kernel/commit/fbde356100d839c6e8d053676a0e84df3a3df7bb))
+* **deps:** update plugin publish to v9.0.3 ([#116](https://github.com/position-pal/shared-kernel/issues/116)) ([581ffff](https://github.com/position-pal/shared-kernel/commit/581ffff56ba07c00f93c34bf925e53e0f9eaf41d))
+* **deps:** update plugin publish to v9.0.4 ([#118](https://github.com/position-pal/shared-kernel/issues/118)) ([ecf569b](https://github.com/position-pal/shared-kernel/commit/ecf569b6f21abc50a05e6d42f6dcf48cb52e2db6))
+* **deps:** update plugin publish to v9.0.5 ([#119](https://github.com/position-pal/shared-kernel/issues/119)) ([c1c8b7a](https://github.com/position-pal/shared-kernel/commit/c1c8b7aeaeea7038c0625c881751357c4a40f974))
+* **deps:** update plugin publish to v9.0.6 ([#121](https://github.com/position-pal/shared-kernel/issues/121)) ([45ff01c](https://github.com/position-pal/shared-kernel/commit/45ff01c2dbbdd2a322ef1aeaafa2dfbaa974708e))
+* **deps:** update plugin publish to v9.0.7 ([#129](https://github.com/position-pal/shared-kernel/issues/129)) ([4a91d22](https://github.com/position-pal/shared-kernel/commit/4a91d22321136ce4a771ea2c2770b06c38d370e6))
+* **deps:** update plugin publish to v9.0.8 ([#132](https://github.com/position-pal/shared-kernel/issues/132)) ([17504bd](https://github.com/position-pal/shared-kernel/commit/17504bd0ab62cb53895ebaaf32c61d37a12ced53))
+* **deps:** update plugin publish to v9.1.0 ([#137](https://github.com/position-pal/shared-kernel/issues/137)) ([fff483c](https://github.com/position-pal/shared-kernel/commit/fff483c29b86390e1211b5372223d68f2dd38ac3))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v5 ([#142](https://github.com/position-pal/shared-kernel/issues/142)) ([1d74d2a](https://github.com/position-pal/shared-kernel/commit/1d74d2a104b6251b531260fd9522165a65b684de))
+
 ## [1.0.5](https://github.com/position-pal/shared-kernel/compare/1.0.4...1.0.5) (2025-06-23)
 
 ### Dependency updates
