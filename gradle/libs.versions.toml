@@ -1,5 +1,5 @@
 [versions]
-kotlin = "2.2.0"
+kotlin = "2.2.10"
 kotest = "5.9.1"
 mockito = "5.18.0"
 avro = "1.12.0"
