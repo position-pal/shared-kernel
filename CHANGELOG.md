@@ -1,3 +1,26 @@
+## [1.0.7](https://github.com/position-pal/shared-kernel/compare/1.0.6...1.0.7) (2025-09-10)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.2.20 ([#166](https://github.com/position-pal/shared-kernel/issues/166)) ([674b3c5](https://github.com/position-pal/shared-kernel/commit/674b3c5f5c14d1e60582567f0c51db3303a6c457))
+* **deps:** update dependency org.mockito:mockito-core to v5.19.0 ([#150](https://github.com/position-pal/shared-kernel/issues/150)) ([30febeb](https://github.com/position-pal/shared-kernel/commit/30febebe16ac11cce3e2fa213a625b63be70e1d2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.140 ([#152](https://github.com/position-pal/shared-kernel/issues/152)) ([1e4cd5d](https://github.com/position-pal/shared-kernel/commit/1e4cd5d8b3ef62b47b2663c8c336de17a7977b1b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.141 ([#162](https://github.com/position-pal/shared-kernel/issues/162)) ([63ea99c](https://github.com/position-pal/shared-kernel/commit/63ea99cf2d94de40f761714ecaa324934d04eadd))
+* **deps:** update kotest to v6 ([#153](https://github.com/position-pal/shared-kernel/issues/153)) ([800f36b](https://github.com/position-pal/shared-kernel/commit/800f36be027be12c029f6066d65ad2a4d0feae4f))
+* **deps:** update kotest to v6.0.1 ([#158](https://github.com/position-pal/shared-kernel/issues/158)) ([300e927](https://github.com/position-pal/shared-kernel/commit/300e927afa0a948b4dc93d6c7617d5175c06974f))
+* **deps:** update kotest to v6.0.2 ([#161](https://github.com/position-pal/shared-kernel/issues/161)) ([ab3f5a5](https://github.com/position-pal/shared-kernel/commit/ab3f5a52c6c7540aaabc380b4db716ee252f0285))
+* **deps:** update kotest to v6.0.3 ([#164](https://github.com/position-pal/shared-kernel/issues/164)) ([eab7e5a](https://github.com/position-pal/shared-kernel/commit/eab7e5a67f3336de4c0b6652eb1e9ecb4279529a))
+* **deps:** update node.js to 22.19 ([#159](https://github.com/position-pal/shared-kernel/issues/159)) ([33ea49d](https://github.com/position-pal/shared-kernel/commit/33ea49d58348617aec5a6d76b937d6843f0cdb48))
+* **deps:** update plugin com.gradle.develocity to v4.1.1 ([#154](https://github.com/position-pal/shared-kernel/issues/154)) ([988367a](https://github.com/position-pal/shared-kernel/commit/988367a7f8b91f2ba97ac91e21f025d55cfa4a46))
+* **deps:** update plugin git-semantic-versioning to v6.0.2 ([#155](https://github.com/position-pal/shared-kernel/issues/155)) ([0b8e54a](https://github.com/position-pal/shared-kernel/commit/0b8e54add110bceea7d597a19a51bea26818811a))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.30 ([#151](https://github.com/position-pal/shared-kernel/issues/151)) ([28ea99c](https://github.com/position-pal/shared-kernel/commit/28ea99c225f9f0d46503561e3f67baf49333f272))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.0 ([#160](https://github.com/position-pal/shared-kernel/issues/160)) ([474f1d6](https://github.com/position-pal/shared-kernel/commit/474f1d648b8860134d977bd3bc322f4d543e5346))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-java action to v5 ([#157](https://github.com/position-pal/shared-kernel/issues/157)) ([c33b2da](https://github.com/position-pal/shared-kernel/commit/c33b2da2da5d02486c25250b346b7cda7669452c))
+* **deps:** update actions/setup-node action to v5 ([#163](https://github.com/position-pal/shared-kernel/issues/163)) ([94e2586](https://github.com/position-pal/shared-kernel/commit/94e2586749c6c66779267d00716aa98824984ed0))
+
 ## [1.0.6](https://github.com/position-pal/shared-kernel/compare/1.0.5...1.0.6) (2025-08-14)
 
 ### Dependency updates
