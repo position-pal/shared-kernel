@@ -1,5 +1,5 @@
 plugins {
-    id("org.danilopianini.gradle-pre-commit-git-hooks") version "2.1.2"
+    id("org.danilopianini.gradle-pre-commit-git-hooks") version "2.1.3"
     id("com.gradle.develocity") version "4.2.2"
     /* Provides a repository for downloading JVMs, provisioning them automatically if missing. */
     id("org.gradle.toolchains.foojay-resolver-convention") version "1.0.0"
