@@ -1,3 +1,35 @@
+## [1.0.8](https://github.com/position-pal/shared-kernel/compare/1.0.7...1.0.8) (2025-10-23)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.2.21 ([#189](https://github.com/position-pal/shared-kernel/issues/189)) ([fce5575](https://github.com/position-pal/shared-kernel/commit/fce5575fa2b19341e0bea2960d5b567a2db0bda0))
+* **core-deps:** update kotlin monorepo to v2.2.21 ([#190](https://github.com/position-pal/shared-kernel/issues/190)) ([327312e](https://github.com/position-pal/shared-kernel/commit/327312ef4cf43d1c7b5bdd758c0fb0cbc8d7d35d))
+* **deps:** update dependency org.apache.avro:avro to v1.12.1 ([#185](https://github.com/position-pal/shared-kernel/issues/185)) ([cc13eb2](https://github.com/position-pal/shared-kernel/commit/cc13eb24adc34504b2f1b65680d8b1600050997a))
+* **deps:** update dependency org.junit:junit-bom to v5.14.0 ([#178](https://github.com/position-pal/shared-kernel/issues/178)) ([4e96153](https://github.com/position-pal/shared-kernel/commit/4e9615305b89ab399e4d6be67fba8e215bf16ab6))
+* **deps:** update dependency org.junit:junit-bom to v6 ([#179](https://github.com/position-pal/shared-kernel/issues/179)) ([ba84dd2](https://github.com/position-pal/shared-kernel/commit/ba84dd2d165c39b7767d60c0dc931aed4fb1fa9a))
+* **deps:** update dependency org.mockito:mockito-core to v5.20.0 ([#174](https://github.com/position-pal/shared-kernel/issues/174)) ([d0b5c0d](https://github.com/position-pal/shared-kernel/commit/d0b5c0d174924a256b701be1623fdbbf1a879f60))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.142 ([#168](https://github.com/position-pal/shared-kernel/issues/168)) ([2cfba75](https://github.com/position-pal/shared-kernel/commit/2cfba757b88db655948d5137c739732f0093317a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.143 ([#169](https://github.com/position-pal/shared-kernel/issues/169)) ([0b681d9](https://github.com/position-pal/shared-kernel/commit/0b681d9a6055fc0a1c96471b5ec50cc3e6a87663))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.144 ([#171](https://github.com/position-pal/shared-kernel/issues/171)) ([01078b6](https://github.com/position-pal/shared-kernel/commit/01078b6b8aa98362c5c4bef52334497b56582610))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.145 ([#172](https://github.com/position-pal/shared-kernel/issues/172)) ([92ac453](https://github.com/position-pal/shared-kernel/commit/92ac4532fbac896d394bc942f31f842f5f3014ee))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.146 ([#175](https://github.com/position-pal/shared-kernel/issues/175)) ([43398ad](https://github.com/position-pal/shared-kernel/commit/43398ade4972fa89a290326d8b0ae99268aa25ba))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.147 ([#177](https://github.com/position-pal/shared-kernel/issues/177)) ([59cabfa](https://github.com/position-pal/shared-kernel/commit/59cabfa5b90fe122c87ae6760cfcdfa0c8cd9ee3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.148 ([#186](https://github.com/position-pal/shared-kernel/issues/186)) ([60c7868](https://github.com/position-pal/shared-kernel/commit/60c7868c64d14a6e1abf33c01cb580e7e2574d8f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.149 ([#187](https://github.com/position-pal/shared-kernel/issues/187)) ([014be6c](https://github.com/position-pal/shared-kernel/commit/014be6c048347148a66d39e7531050487482e99a))
+* **deps:** update kotest to v6.0.4 ([#183](https://github.com/position-pal/shared-kernel/issues/183)) ([4961a0d](https://github.com/position-pal/shared-kernel/commit/4961a0d233ad4bc8d0d2e2aa856bffb8957db7f8))
+* **deps:** update node.js to 22.20 ([#176](https://github.com/position-pal/shared-kernel/issues/176)) ([40a185f](https://github.com/position-pal/shared-kernel/commit/40a185f9c0fb6070a095b93e9284cf18204dcc41))
+* **deps:** update node.js to 22.21 ([#188](https://github.com/position-pal/shared-kernel/issues/188)) ([0dea745](https://github.com/position-pal/shared-kernel/commit/0dea74550bdc4969a2fa36c229e42f06d087b0b2))
+* **deps:** update plugin com.gradle.develocity to v4.2 ([#170](https://github.com/position-pal/shared-kernel/issues/170)) ([2be1807](https://github.com/position-pal/shared-kernel/commit/2be1807157f2adaa93479f13b5e98f7639aa9d68))
+* **deps:** update plugin com.gradle.develocity to v4.2.1 ([#180](https://github.com/position-pal/shared-kernel/issues/180)) ([d6df58e](https://github.com/position-pal/shared-kernel/commit/d6df58e0bcaa34c9d74c74ae69181fe13d9d840b))
+* **deps:** update plugin com.gradle.develocity to v4.2.2 ([#181](https://github.com/position-pal/shared-kernel/issues/181)) ([d2cdda9](https://github.com/position-pal/shared-kernel/commit/d2cdda9638dbbabd8e5421a4e99691bed350c361))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.1 ([#167](https://github.com/position-pal/shared-kernel/issues/167)) ([061e08a](https://github.com/position-pal/shared-kernel/commit/061e08aee6ec5c89d3f96ed10ed1de12965015aa))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.2 ([#173](https://github.com/position-pal/shared-kernel/issues/173)) ([2b68d2b](https://github.com/position-pal/shared-kernel/commit/2b68d2b54da77cee0b814450017993deb4d5eff2))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.3 ([#191](https://github.com/position-pal/shared-kernel/issues/191)) ([58948b6](https://github.com/position-pal/shared-kernel/commit/58948b650c0401d61bc122fb4a122ae16d09390b))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v6 ([#182](https://github.com/position-pal/shared-kernel/issues/182)) ([8ce83d2](https://github.com/position-pal/shared-kernel/commit/8ce83d2ab4aa7a8d460d8ff4db4e7bbf58c4d5d3))
+
 ## [1.0.7](https://github.com/position-pal/shared-kernel/compare/1.0.6...1.0.7) (2025-09-10)
 
 ### Dependency updates
