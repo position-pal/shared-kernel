@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.3.20"
-kotest = "6.1.9"
+kotest = "6.1.10"
 mockito = "5.23.0"
 avro = "1.12.1"
 avro-plugin = "1.9.1"
