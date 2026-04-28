@@ -1,3 +1,24 @@
+## [1.0.12](https://github.com/position-pal/shared-kernel/compare/1.0.11...1.0.12) (2026-04-28)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.jvm to v2.3.21 ([#265](https://github.com/position-pal/shared-kernel/issues/265)) ([da447dd](https://github.com/position-pal/shared-kernel/commit/da447dd90c91e9f684451050243ede9d3d0b9bd6))
+* **deps:** update dependency io.kotest:kotest-assertions-core-jvm to v6.1.8 ([#253](https://github.com/position-pal/shared-kernel/issues/253)) ([38e0af2](https://github.com/position-pal/shared-kernel/commit/38e0af21436562a1cc7421821f47836845f3264f))
+* **deps:** update kotest to v6.1.10 ([#256](https://github.com/position-pal/shared-kernel/issues/256)) ([82e7cec](https://github.com/position-pal/shared-kernel/commit/82e7cec801fc1079a2764cdb3b8d2f7cf3d01bc7))
+* **deps:** update kotest to v6.1.11 ([#257](https://github.com/position-pal/shared-kernel/issues/257)) ([5387394](https://github.com/position-pal/shared-kernel/commit/5387394976216e1203f4efa6314bb74887b34d7e))
+* **deps:** update kotest to v6.1.9 ([#254](https://github.com/position-pal/shared-kernel/issues/254)) ([55637e8](https://github.com/position-pal/shared-kernel/commit/55637e82aa121ec962082338e505bf7fe48f2998))
+* **deps:** update node.js to 24.15 ([#259](https://github.com/position-pal/shared-kernel/issues/259)) ([e4245b4](https://github.com/position-pal/shared-kernel/commit/e4245b467b45586442197e2bb975befc4369d0b5))
+* **deps:** update plugin com.gradle.develocity to v4.4.0 ([#255](https://github.com/position-pal/shared-kernel/issues/255)) ([997e172](https://github.com/position-pal/shared-kernel/commit/997e172c5a802143d22fdfc83115a47373b2605e))
+* **deps:** update plugin com.gradle.develocity to v4.4.1 ([#263](https://github.com/position-pal/shared-kernel/issues/263)) ([0e5ccaf](https://github.com/position-pal/shared-kernel/commit/0e5ccaf3d8bc669f41651cdedf16e3b45e36bd1b))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.13 ([#260](https://github.com/position-pal/shared-kernel/issues/260)) ([7e22d5f](https://github.com/position-pal/shared-kernel/commit/7e22d5fbc671e1846ec1f0b4ba4f696f14b890c8))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.14 ([#261](https://github.com/position-pal/shared-kernel/issues/261)) ([f55cf32](https://github.com/position-pal/shared-kernel/commit/f55cf32d16420f47262c29112e26967888c5f425))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.15 ([#267](https://github.com/position-pal/shared-kernel/issues/267)) ([378ea44](https://github.com/position-pal/shared-kernel/commit/378ea44e1eaa33e01cc463f3861948579e4f7d1a))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.16 ([#268](https://github.com/position-pal/shared-kernel/issues/268)) ([b054e75](https://github.com/position-pal/shared-kernel/commit/b054e75e1dcf3fff93317cf05aa50df1e3ef7385))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v6.4.0 ([#262](https://github.com/position-pal/shared-kernel/issues/262)) ([3aa0ffe](https://github.com/position-pal/shared-kernel/commit/3aa0ffe8d6e09dd6fd10393165657cc80952966e))
+
 ## [1.0.11](https://github.com/position-pal/shared-kernel/compare/1.0.10...1.0.11) (2026-03-19)
 
 ### Dependency updates
