@@ -1,3 +1,19 @@
+## [1.0.13](https://github.com/position-pal/shared-kernel/compare/1.0.12...1.0.13) (2026-06-06)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.4.0 ([#276](https://github.com/position-pal/shared-kernel/issues/276)) ([5ed07a8](https://github.com/position-pal/shared-kernel/commit/5ed07a87e06abda037bc1d62d37e39050ff6361e))
+* **deps:** update dependency org.junit:junit-bom to v6.1.0 ([#271](https://github.com/position-pal/shared-kernel/issues/271)) ([7351f8c](https://github.com/position-pal/shared-kernel/commit/7351f8ca0dfcded18700bcfdeb0b4e108ab20782))
+* **deps:** update gradle to v8.14.5 ([#269](https://github.com/position-pal/shared-kernel/issues/269)) ([974c6a2](https://github.com/position-pal/shared-kernel/commit/974c6a2a5abab0295e3d36e63754242e95966fa4))
+* **deps:** update node.js to 24.16 ([#272](https://github.com/position-pal/shared-kernel/issues/272)) ([c9f1f31](https://github.com/position-pal/shared-kernel/commit/c9f1f31a0500cdb78dd6b666c54c732ad7b077fa))
+* **deps:** update plugin com.gradle.develocity to v4.4.2 ([#273](https://github.com/position-pal/shared-kernel/issues/273)) ([208ae6a](https://github.com/position-pal/shared-kernel/commit/208ae6a6b32e2e1d8890712c9b7b6b687baf929a))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.17 ([#270](https://github.com/position-pal/shared-kernel/issues/270)) ([fdf9f8e](https://github.com/position-pal/shared-kernel/commit/fdf9f8eb56429ce659e7d8ee9654514ac6e8f83d))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.18 ([#275](https://github.com/position-pal/shared-kernel/issues/275)) ([ccbaee3](https://github.com/position-pal/shared-kernel/commit/ccbaee36d968f2a1950ae161172792feb84e5c05))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout digest to df4cb1c ([#274](https://github.com/position-pal/shared-kernel/issues/274)) ([80dba41](https://github.com/position-pal/shared-kernel/commit/80dba413f4b8e7b335dc52dd486809ade6a8c429))
+
 ## [1.0.12](https://github.com/position-pal/shared-kernel/compare/1.0.11...1.0.12) (2026-04-28)
 
 ### Dependency updates
