@@ -1,3 +1,24 @@
+## [1.0.15](https://github.com/position-pal/shared-kernel/compare/1.0.14...1.0.15) (2026-09-07)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.4.20 ([#309](https://github.com/position-pal/shared-kernel/issues/309)) ([7259e5a](https://github.com/position-pal/shared-kernel/commit/7259e5a09a00de1817ae66a650b58c597e6affbe))
+* **deps:** update dependency io.kotest:kotest-runner-junit5-jvm to v6.2.4 ([#304](https://github.com/position-pal/shared-kernel/issues/304)) ([7f23300](https://github.com/position-pal/shared-kernel/commit/7f2330038e45f1606d4dd21a560bfab75d1b06b1))
+* **deps:** update dependency org.junit:junit-bom to v6.1.3 ([#301](https://github.com/position-pal/shared-kernel/issues/301)) ([975a985](https://github.com/position-pal/shared-kernel/commit/975a9856a08b96520acd448328b6d520ea6702ac))
+* **deps:** update kotest to v6.2.3 ([#298](https://github.com/position-pal/shared-kernel/issues/298)) ([f0dc6df](https://github.com/position-pal/shared-kernel/commit/f0dc6dfd930a82c7382d367ea3e622785f9658ba))
+* **deps:** update node.js to 24.19 ([#300](https://github.com/position-pal/shared-kernel/issues/300)) ([f2cfc9b](https://github.com/position-pal/shared-kernel/commit/f2cfc9bcdd815e164190b5c77a11f426db4a63b9))
+* **deps:** update node.js to 24.20 ([#308](https://github.com/position-pal/shared-kernel/issues/308)) ([99f533c](https://github.com/position-pal/shared-kernel/commit/99f533c3ea792d411b0f184d58dee9cfe97106c3))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.22 ([#302](https://github.com/position-pal/shared-kernel/issues/302)) ([e2a6118](https://github.com/position-pal/shared-kernel/commit/e2a61187ffb329d0182df63e773ef8595cd63d17))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.23 ([#306](https://github.com/position-pal/shared-kernel/issues/306)) ([3e487d6](https://github.com/position-pal/shared-kernel/commit/3e487d694fb568aaa6ba5dca77e4e38b7894aaa0))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout digest to 3d3c42e ([#297](https://github.com/position-pal/shared-kernel/issues/297)) ([4534612](https://github.com/position-pal/shared-kernel/commit/4534612362f8638e07fef99b557a0fecad341682))
+* **deps:** update actions/setup-java action to v6 ([#307](https://github.com/position-pal/shared-kernel/issues/307)) ([7c31fcb](https://github.com/position-pal/shared-kernel/commit/7c31fcb18bfe5b5898bad92955c781ce74ac0a6f))
+* **deps:** update actions/setup-java digest to 03ad4de ([#296](https://github.com/position-pal/shared-kernel/issues/296)) ([7ed1c29](https://github.com/position-pal/shared-kernel/commit/7ed1c29093ec4aec7998507bf238e0373757ded6))
+* **deps:** update actions/setup-java digest to b6effb0 ([#299](https://github.com/position-pal/shared-kernel/issues/299)) ([2a0c274](https://github.com/position-pal/shared-kernel/commit/2a0c27437c8d970f7e24de89d4390800bf3ecd39))
+* **deps:** update jamesives/github-pages-deploy-action digest to fa24774 ([#303](https://github.com/position-pal/shared-kernel/issues/303)) ([a345db3](https://github.com/position-pal/shared-kernel/commit/a345db367cde9684d07b2de5f4a669cfed9298f1))
+
 ## [1.0.14](https://github.com/position-pal/shared-kernel/compare/1.0.13...1.0.14) (2026-07-14)
 
 ### Dependency updates
