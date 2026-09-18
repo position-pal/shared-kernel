@@ -2,7 +2,7 @@
 kotlin = "2.4.20"
 kotest = "6.2.5"
 mockito = "5.23.0"
-avro = "1.12.1"
+avro = "1.12.2"
 avro-plugin = "1.9.1"
 junit = "6.1.3"
 
